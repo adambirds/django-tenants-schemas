@@ -4,12 +4,12 @@ from setuptools import find_packages
 from setuptools import setup
 
 setup(
-    name="django-tenant-schemas",
-    author="Bernardo Pires Carneiro",
-    author_email="carneiro.be@gmail.com",
+    name="django-tenants-schemas",
+    author="Adam Birds",
+    author_email="adam.birds@adbwebdesigns.co.uk",
     packages=find_packages(),
     scripts=[],
-    url="https://github.com/bcarneiro/django-tenant-schemas",
+    url="https://github.com/adambirds/django-tenants-schemas",
     license="MIT",
     description="Tenant support for Django using PostgreSQL schemas.",
     long_description=open("README.rst").read() if exists("README.rst") else "",
@@ -20,6 +20,7 @@ setup(
         "Framework :: Django :: 2.0",
         "Framework :: Django :: 2.1",
         "Framework :: Django :: 2.2",
+        "Framework :: Django :: 4.2",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3.6",
@@ -29,6 +30,6 @@ setup(
     ],
     install_requires=["Django>=2.2", "ordered-set", "psycopg2-binary", "six"],
     setup_requires=["setuptools-scm"],
-    use_scm_version=True,
+    version="1.0.0",
     zip_safe=False,
 )
